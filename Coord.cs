@@ -31,6 +31,24 @@ namespace SnakeGame
             return this.x == other.x && this.y == other.y;
         }
 
+        public void ApplyMovement(Direction direction)
+        {
+            switch (direction)
+            {
+                case Direction.Up:
+                    y--;
+                    break;
+                case Direction.Down:
+                    y++;
+                    break;
+                case Direction.Left:
+                    x--;
+                    break;
+                case Direction.Right:
+                    x++;
+                    break;
 
+            }
+        }
     }
 }
